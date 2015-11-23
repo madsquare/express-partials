@@ -42,7 +42,7 @@ module.exports = function(){
 
     // layout support
     var _render = res.render.bind(res);
-    res.render = function(name, options, fn){
+    res.partialRender = function(name, options, fn){
       var layout = options && options.layout;
 
       // default layout
